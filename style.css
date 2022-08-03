@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+.container {
+  width: 800px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    /* margin: auto; */
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  background-color: #FEF5ED;
+  font-family: 'Uchen', sans-serif;
+}
+
+h1, h2 {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h2 em {
+  text-transform: none;
+  font-size: 0.5em;
+}
+
+a {
+  font-family: 'Abel', sans-serif;
+  color: rgb(153, 167, 153);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(153, 167, 153, 0.5);
+}
+
+a:visited {
+  color: rgb(153, 167, 153);
+}
+
+a:active{
+  color: rgb(153, 167, 153, 0.8);
+}
+
+button {
+  color: #485e48;
+  border-radius: 60px;
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(254, 245, 237);
+  box-shadow: 0 5px 5px rgb(153, 167, 153);
+}
+
+button:hover {
+  background-color: rgb(173, 194, 169);
+  color: rgb(254, 245, 237);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 3px rgba(153, 167, 153, 0.3);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgb(211, 228, 205);
+  padding: 30px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(235, 255, 227, 0.8);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.photo {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.3);
+  height: 150px;
+  width: 150px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
